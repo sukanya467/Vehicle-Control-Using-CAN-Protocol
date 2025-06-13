@@ -14,17 +14,19 @@ This project simulates a basic vehicle communication system using the **CAN (Con
 - Interrupt-based CAN message handling
 - Message filtering and error handling supported
 
-## Tools & Technologies:
-- Embedded C
-- **Keil µVision IDE**
-- CAN transceiver: **MCP2551**
-- CAN analysis tool: *(mention if you used any – like Vector CANalyzer or terminal output)*
+## Hardware & Debug Tools Used
+
+- Microcontroller : LPC2129 (ARM7TDMI-S)
+- CAN Transceiver : MCP2551
+- CAN Analysis Tool : Vector CANalyzer (with Vector hardware board)
+- Debug Output : UART Serial Monitor for CAN message logs
+
 
 ## Project Files:
-- main.c` – Application logic for vehicle control
-- can_init.c` – CAN1 initialization for LPC2129
-- startup.s` – Startup file for ARM7
-- README.md` – Project overview 
+- main.c – Application logic for vehicle control
+- can_init.c – CAN1 initialization for LPC2129
+- startup.s – Startup file for ARM7
+- README.md – Project overview 
 
 ## How It Works:
 - CAN1 is configured with a 125kbps or 250kbps baud rate
